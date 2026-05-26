@@ -38,7 +38,7 @@ TÍTULOS
 
 h1 {
     font-weight: bold;
-    color: #111827;
+    color: white;
 }
 
 h2 {
@@ -75,10 +75,18 @@ KPIs
 }
 
 .kpi-value {
-    font-size: 34px;
-    font-weight: bold;
+    font-size: 25px;
+    
     color: #111827;
 }
+
+.kpi-subvalue{
+    color:#3b82f6;
+    font-size:10px;
+    margin-top:-5px;
+    font-weight:500;
+}
+
 
 /* =========================================
 GRÁFICOS
@@ -113,4 +121,118 @@ SEÇÕES
 .section-title {
     margin-top: 40px;
     margin-bottom: 20px;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero-section{
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e3a8a
+    );
+
+    padding: 50px;
+    border-radius: 24px;
+    margin-bottom: 40px;
+
+    color: white;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* =========================================
+   TITULOS
+========================================= */
+
+.hero-title{
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.hero-subtitle{
+    font-size: 18px;
+    opacity: 0.9;
+    line-height: 1.8;
+    max-width: 700px;
+}
+
+/* =========================================
+   TAGS
+========================================= */
+
+.tags-container{
+    margin-top: 25px;
+}
+
+.tag{
+    display: inline-block;
+
+    background: rgba(255,255,255,0.15);
+
+    padding: 10px 18px;
+
+    border-radius: 30px;
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    backdrop-filter: blur(10px);
+}
+
+/* =========================================
+   MINI CARDS
+========================================= */
+
+.hero-side-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mini-card{
+    background: rgba(255,255,255,0.12);
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.mini-card h4{
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.mini-card h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media(max-width: 768px){
+
+    .hero-title{
+        font-size: 34px;
+    }
+
+    .hero-subtitle{
+        font-size: 16px;
+    }
+
 }
